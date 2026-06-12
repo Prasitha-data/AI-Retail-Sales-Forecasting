@@ -2,15 +2,15 @@
 
 ## Project Overview
 
-This project analyzes historical retail sales data from the Global Superstore dataset and predicts future sales trends using machine learning and time-series forecasting techniques.
+This project analyzes historical retail sales data from the Global Superstore dataset and forecasts future sales using Machine Learning and Time Series Forecasting techniques.
 
-The objective is to help businesses understand sales performance, identify profitable categories and markets, and support data-driven decision-making through forecasting and interactive dashboards.
+The project helps businesses understand sales patterns, identify high-performing products and markets, and make data-driven decisions.
 
 ---
 
 ## Problem Statement
 
-Retail businesses need accurate sales forecasting to optimize inventory management, improve business planning, and maximize profitability.
+Retail businesses require accurate sales forecasting to optimize inventory management, improve business planning, and maximize profitability.
 
 This project uses historical sales data to analyze business performance and forecast future sales trends using Facebook Prophet.
 
@@ -18,83 +18,77 @@ This project uses historical sales data to analyze business performance and fore
 
 ## Dataset Information
 
-**Dataset:** Global Superstore
+**Dataset:** Global Superstore Dataset
 
 **Records:** 51,290
 
 **Features:** 21
 
-The dataset contains information such as:
+The dataset contains:
 
-- Order ID
-- Order Date
-- Ship Date
-- Customer Name
-- Product Name
-- Category
-- Market
-- Region
-- Sales
-- Profit
-- Discount
-- Quantity
+* Order Information
+* Customer Details
+* Product Details
+* Market Information
+* Sales
+* Profit
+* Discount
+* Shipping Information
 
 ---
 
 ## Technologies Used
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Facebook Prophet
-- Streamlit
-- Power BI
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Streamlit
+* Facebook Prophet
+* Power BI
+* Jupyter Notebook
+
+---
+
+## Project KPIs
+
+| KPI             | Value     |
+| --------------- | --------- |
+| Total Sales     | 4,865,671 |
+| Total Profit    | 577,692   |
+| Total Orders    | 10,086    |
+| Total Customers | 795       |
 
 ---
 
 ## Features
 
-### Data Analysis
-- Sales Analysis
-- Profit Analysis
-- Market Analysis
-- Category Analysis
-- Product Performance Analysis
+### Streamlit Dashboard
 
-### Dashboard Development
-- Interactive Streamlit Dashboard
-- Power BI Dashboard
-- KPI Monitoring
-- Business Insights Visualization
+* Sales Overview
+* Monthly Sales Trend
+* Sales by Category
+* Profit by Category
+* Sales by Market
+* Top Selling Products
+* Dataset Preview
+* Business Insights
 
 ### Sales Forecasting
-- Time Series Forecasting
-- Future Sales Prediction
-- Trend Analysis
-- Forecast Visualization
 
----
+* Time Series Forecasting using Facebook Prophet
+* Future Sales Prediction
+* Forecast Visualization
+* Model Performance Evaluation
 
-## Key Performance Indicators (KPIs)
+### Power BI Dashboard
 
-| KPI | Value |
-|------|------|
-| Total Sales | 4,865,671 |
-| Total Profit | 577,692 |
-| Total Orders | 10,086 |
-| Total Customers | 795 |
-
----
-
-## Business Insights
-
-- Technology category generated the highest sales.
-- Technology category generated the highest profit.
-- APAC market generated the highest revenue.
-- Higher discounts negatively affected profitability.
-- Sales showed a positive growth trend over time.
-- Historical patterns indicate continued sales growth potential.
+* Interactive KPI Cards
+* Sales Trend Analysis
+* Category Analysis
+* Market Analysis
+* Product Performance Analysis
+* Business Insights
 
 ---
 
@@ -102,66 +96,88 @@ The dataset contains information such as:
 
 ### Streamlit Dashboard Overview
 
-![Overview](screenshots/streamlit_overview.png)
+![Streamlit Overview](streamlit_overview.png)
 
 ### Streamlit Analytics Dashboard
 
-![Analytics](screenshots/streamlit_analytics.png)
+![Analytics Dashboard](streamlit_analytics.png)
 
-### Sales Forecasting
+### Sales Forecasting Dashboard
 
-![Forecasting](screenshots/streamlit_forecasting.png)
+![Forecasting Dashboard](streamlit_forecasting.png)
 
 ### Power BI Dashboard
 
-![Power BI Dashboard](screenshots/powerbi_dashboard.png)
+![Power BI Dashboard](powerbi_dashboard.png)
+
+---
+
+## Forecasting Results
+
+### Model
+
+Facebook Prophet
+
+### Forecast Horizon
+
+12 Months
+
+### Model Performance
+
+**MAE (Mean Absolute Error):**
+
+15,936.83
+
+The model predicts a positive sales growth trend based on historical sales patterns.
+
+---
+
+## Business Insights
+
+* Technology category generated the highest sales.
+* Technology category generated the highest profit.
+* APAC market generated the highest revenue.
+* Higher discounts negatively affected profitability.
+* Sales show a positive growth trend over time.
+* Forecast results indicate future sales growth potential.
 
 ---
 
 ## Project Structure
 
 ```text
-AI_RETAIL_SALES_FORECASTING
-│
-├── screenshots/
-│   ├── powerbi_dashboard.png
-│   ├── streamlit_analytics.png
-│   ├── streamlit_forecasting.png
-│   └── streamlit_overview.png
+AI-Retail-Sales-Forecasting/
 │
 ├── app.py
+├── README.md
+├── requirements.txt
 ├── Sales_Forecasting.ipynb
 ├── SuperStoreOrders.csv.zip
 ├── AI_Retail_Sales_Forecasting.pbix
-├── README.md
-├── requirements.txt
-├── .gitignore
-└── venv/
+│
+├── streamlit_overview.png
+├── streamlit_analytics.png
+├── streamlit_forecasting.png
+└── powerbi_dashboard.png
 ```
 
 ---
 
 ## Installation
 
-### Clone Repository
+Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/your-username/AI-Retail-Sales-Forecasting.git
 ```
 
-### Navigate to Project Folder
-
-```bash
-cd AI_Retail_Sales_Forecasting
-```
-
-### Install Dependencies
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run Streamlit Application
+Run Streamlit application:
 
 ```bash
 streamlit run app.py
@@ -169,32 +185,13 @@ streamlit run app.py
 
 ---
 
-## Power BI Dashboard
+## Future Improvements
 
-A Power BI dashboard was developed to provide:
-
-- Sales Performance Analysis
-- Category-wise Analysis
-- Market-wise Analysis
-- KPI Monitoring
-- Business Intelligence Reporting
-
-File:
-
-```text
-AI_Retail_Sales_Forecasting.pbix
-```
-
----
-
-## Future Enhancements
-
-- Advanced Forecasting Models
-- Real-Time Data Integration
-- Customer Segmentation
-- Inventory Optimization
-- Interactive Forecast Filters
-- Cloud Deployment
+* Deploy Streamlit application on Streamlit Cloud
+* Add advanced forecasting models
+* Implement real-time sales monitoring
+* Add customer segmentation analysis
+* Create interactive filtering options
 
 ---
 
