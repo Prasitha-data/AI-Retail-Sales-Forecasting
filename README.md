@@ -1,5 +1,8 @@
 # 📈 AI Retail Sales Forecasting
+## 🚀 Live Demo
 
+🔗 Streamlit App:
+https://ai-retail-sales-forecasting-so86orhcvnbd5z7uej4thi.streamlit.app/
 ## Project Overview
 
 This project analyzes historical retail sales data from the Global Superstore dataset and forecasts future sales using Machine Learning and Time Series Forecasting techniques.
